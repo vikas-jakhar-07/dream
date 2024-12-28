@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    font-family: "Hind Vadodara", sans-serif;
+}
+
+::-webkit-scrollbar {
+    @apply w-2
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-light-sky
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-off-black
+}
+
+.scroll-button:hover .scroll-icon {
+    transform: rotateY(180deg);
+}
+
+.menu-link:hover {
+    -webkit-text-stroke: 0.8px #331B3B;
+}
+
+@media (min-width:1400px) {
+    .meeting-image {
+        @apply -mr-11
+    }
+}
+
+@media (min-width:1920px) {
+    .custom-ml {
+        @apply !ml-[calc((1920px-1340px)/2+218px)]
+    }
+
+    .custom-left {
+        @apply !left-[calc((1920px-1340px)/2+90px)]
+    }
+
+    .work-custom-left {
+        @apply !left-[calc((1920px-1340px)/2+142px)]
+    }
+}
